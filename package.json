@@ -19,6 +19,7 @@
     "@angular/http": "^6.0.3",
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
+    "@angular/platform-server": "^6.0.3",
     "@angular/router": "^6.0.3",
     "angularfire2": "^5.0.0-rc.8.1-next",
     "core-js": "^2.5.4",
