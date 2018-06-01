@@ -1,0 +1,12 @@
+<div *ngIf="fruit$ | async as fruit">
+
+  <div class="fruit-thumb">
+    <img [src]="fruit.img" [alt]="fruit.name">
+  </div>
+
+  <div class="fruit-content">
+    <h1>{{ fruit.name }}</h1>
+    <p>{{ fruit.descr }}</p>
+  </div>
+
+</div>
