@@ -1,0 +1,11 @@
+<h1>Animals List</h1>
+
+<p>Animals loaded from Real Time Database:</p>
+
+<section *ngFor="let animal of animals$ | async" class="article">
+  <div class="thumb" [routerLink]="'/animal/' + animal.name">
+    <img [src]="animal.img" [alt]="animal.name">
+  </div>
+  <h2 [routerLink]="'/animal/' + animal.name">{{ animal.name }}</h2>
+  <p>{{ animal.descr | slice:0:50 }}...</p>
+</section>
