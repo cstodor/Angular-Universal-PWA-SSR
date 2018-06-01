@@ -11,11 +11,13 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FruitDetailsComponent } from './fruit-details/fruit-details.component';
+import { FruitsListComponent } from './fruits-list/fruits-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FruitDetailsComponent
+    FruitDetailsComponent,
+    FruitsListComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
