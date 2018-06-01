@@ -43,7 +43,7 @@ export class FruitDetailsComponent implements OnInit {
           // Set Meta Title
           this.ss.setSeoMetaTags(fruit.name);
           // Set Twitter Meta Tags
-          this.ss.setTwitterMetaTags('summary', '@cstodor', fruit.name, fruit.desc, fruit.img);
+          this.ss.setTwitterMetaTags('summary', '@cstodor', fruit.name, fruit.descr, fruit.img);
         }),
         startWith(exists)
       );
