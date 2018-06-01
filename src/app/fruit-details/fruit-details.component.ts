@@ -12,7 +12,6 @@ const FRUIT_KEY = makeStateKey<any>('fruit');
 @Component({
   selector: 'app-fruit-details',
   templateUrl: './fruit-details.component.html',
-  styleUrls: ['./fruit-details.component.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class FruitDetailsComponent implements OnInit {
