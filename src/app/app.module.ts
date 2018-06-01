@@ -1,23 +1,35 @@
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // AngularFire2 Modules
-import { AngularFireModule, FirebaseOptionsToken } from 'angularfire2';
+import { AngularFireModule, FirebaseOptionsToken, FirebaseAppConfigToken } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FruitDetailsComponent } from './fruit-details/fruit-details.component';
 import { FruitsListComponent } from './fruits-list/fruits-list.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { PrimaryMenuComponent } from './shared/primary-menu/primary-menu.component';
+import { AnimalsListComponent } from './animals-list/animals-list.component';
+import { AnimalDetailsComponent } from './animal-details/animal-details.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FruitDetailsComponent,
-    FruitsListComponent
+    FruitsListComponent,
+    HeaderComponent,
+    FooterComponent,
+    PrimaryMenuComponent,
+    AnimalsListComponent,
+    AnimalDetailsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -26,10 +38,12 @@ import { FruitsListComponent } from './fruits-list/fruits-list.component';
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
+    AngularFireDatabaseModule,
     AppRoutingModule,
   ],
   providers: [
-    { provide: FirebaseOptionsToken, useValue: environment.firebase }
+    { provide: FirebaseOptionsToken, useValue: environment.firebase },
+    { provide: FirebaseAppConfigToken, useValue: environment.firebase }
   ],
   bootstrap: [AppComponent]
 })
