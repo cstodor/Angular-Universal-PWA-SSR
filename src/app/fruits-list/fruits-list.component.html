@@ -1,3 +1,11 @@
-<p>
-  fruits-list works!
-</p>
+<h1>Fruits List</h1>
+
+<p>Fruits loaded from Firestore:</p>
+
+<section *ngFor="let fruit of fruits$ | async" class="article">
+  <div class="thumb" [routerLink]="'/fruit/' + fruit.name">
+    <img [src]="fruit.img" [alt]="fruit.name">
+  </div>
+  <h2 [routerLink]="'/fruit/' + fruit.name">{{ fruit.name }}</h2>
+  <p>{{ fruit.descr | slice:0:50 }}...</p>
+</section>
