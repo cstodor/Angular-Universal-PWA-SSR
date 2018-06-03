@@ -1,0 +1,58 @@
+{
+    "index": "/index.html",
+    "assetGroups": [{
+            "name": "app",
+            "installMode": "prefetch",
+            "resources": {
+                "files": [
+                    "/favicon.ico",
+                    "/index.html",
+                    "/*.bundle.css",
+                    "/*.bundle.js",
+                    "/*.chunk.js"
+                ]
+            }
+        },
+        {
+            "name": "assets",
+            "installMode": "lazy",
+            "updateMode": "prefetch",
+            "resources": {
+                "files": [
+                    "/assets/**"
+                ],
+                "urls": [
+                    "https://fonts.googleapis.com/css?family=Roboto",
+                    "https://fonts.googleapis.com/icon?family=Material+Icons"
+                ]
+            }
+        }
+    ],
+    "dataGroups": [{
+            "name": "tmdb-api-freshness",
+            "urls": [
+                "/",
+                "/fruits",
+                "/animals"
+            ],
+            "cacheConfig": {
+                "maxSize": 100,
+                "maxAge": "1h",
+                "timeout": "5s",
+                "strategy": "freshness"
+            }
+        },
+        {
+            "name": "tmdb-api-performance",
+            "urls": [
+                "/fruits/*",
+                "/animals/*"
+            ],
+            "cacheConfig": {
+                "maxSize": 100,
+                "maxAge": "4h",
+                "strategy": "performance"
+            }
+        }
+    ]
+}
