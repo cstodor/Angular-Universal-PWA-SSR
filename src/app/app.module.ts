@@ -1,7 +1,7 @@
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // AngularFire2 Modules
-import { AngularFireModule, FirebaseOptionsToken, FirebaseAppConfigToken } from 'angularfire2';
+import { AngularFireModule, FirebaseOptionsToken } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -41,7 +41,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserTransferStateModule, // For State Transfer
-    AngularFireModule,
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
@@ -52,8 +52,7 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
   ],
   providers: [
-    { provide: FirebaseOptionsToken, useValue: environment.firebase },
-    { provide: FirebaseAppConfigToken, useValue: environment.firebase }
+    { provide: FirebaseOptionsToken, useValue: environment.firebase }
   ],
   bootstrap: [AppComponent]
 })
