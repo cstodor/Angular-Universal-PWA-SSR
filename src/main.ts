@@ -10,5 +10,11 @@ if (environment.production) {
 
 document.addEventListener('DOMContentLoaded', () => {
   platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.log(err));
+    .then(() => {
+      // Regsiters Service Worker
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('ngsw-worker.js');
+      }
+    })
+    .catch(err => console.log(err));
 });

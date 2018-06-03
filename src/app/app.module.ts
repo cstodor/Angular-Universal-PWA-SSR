@@ -7,8 +7,15 @@ import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
-
+// Service Worker
+import { ServiceWorkerModule } from '@angular/service-worker';
+// Material Modules
+import { MatCardModule } from '@angular/material';
+// FLex Layout
+import { FlexLayoutModule } from '@angular/flex-layout';
+// Routing
 import { AppRoutingModule } from './app-routing.module';
+// Components
 import { AppComponent } from './app.component';
 import { FruitDetailsComponent } from './fruit-details/fruit-details.component';
 import { FruitsListComponent } from './fruits-list/fruits-list.component';
@@ -39,6 +46,9 @@ import { HomeComponent } from './home/home.component';
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
+    MatCardModule,
+    FlexLayoutModule,
+    environment.production ? ServiceWorkerModule.register('ngsw-worker.js') : [], // Regsiters Service Worker
     AppRoutingModule,
   ],
   providers: [
