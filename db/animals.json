@@ -1,0 +1,54 @@
+{
+  "animals" : {
+    "bear" : {
+      "descr" : "Bear is not a toy! Proin diam dolor, efficitur sed elementum eu, efficitur quis nisl. Morbi eget sem ligula. Etiam hendrerit purus ut nibh aliquam malesuada vitae in nisi. Cras non nunc ex. Aenean pretium, ligula vitae dignissim accumsan, neque tellus mattis lorem, accumsan consequat nibh turpis at purus. Morbi facilisis ultrices gravida. Integer id augue id nunc consectetur hendrerit lobortis eget risus. Nullam pharetra aliquam massa, non venenatis ex condimentum vitae. Ut semper nisi ac turpis lacinia, eu consectetur sapien porttitor. Sed nec facilisis justo, sit amet pulvinar lorem.",
+      "img" : "https://cdn.playbuzz.com/cdn//ef27859d-0015-437a-b5c5-16e0857aed92/3776d1b0-acdf-49d3-82c1-57d493a9ebcc.jpg",
+      "name" : "Bear"
+    },
+    "cat" : {
+      "descr" : "Bear is not a toy! Proin diam dolor, efficitur sed elementum eu, efficitur quis nisl. Morbi eget sem ligula. Etiam hendrerit purus ut nibh aliquam malesuada vitae in nisi. Cras non nunc ex. Aenean pretium, ligula vitae dignissim accumsan, neque tellus mattis lorem, accumsan consequat nibh turpis at purus. Morbi facilisis ultrices gravida. Integer id augue id nunc consectetur hendrerit lobortis eget risus. Nullam pharetra aliquam massa, non venenatis ex condimentum vitae. Ut semper nisi ac turpis lacinia, eu consectetur sapien porttitor. Sed nec facilisis justo, sit amet pulvinar lorem.",
+      "img" : "https://upload.wikimedia.org/wikipedia/commons/e/e0/Lucy_staring.jpg",
+      "name" : "Cat"
+    },
+    "dog" : {
+      "descr" : "Dogs are man's best friend. Proin diam dolor, efficitur sed elementum eu, efficitur quis nisl. Morbi eget sem ligula. Etiam hendrerit purus ut nibh aliquam malesuada vitae in nisi. Cras non nunc ex. Aenean pretium, ligula vitae dignissim accumsan, neque tellus mattis lorem, accumsan consequat nibh turpis at purus. Morbi facilisis ultrices gravida. Integer id augue id nunc consectetur hendrerit lobortis eget risus. Nullam pharetra aliquam massa, non venenatis ex condimentum vitae. Ut semper nisi ac turpis lacinia, eu consectetur sapien porttitor. Sed nec facilisis justo, sit amet pulvinar lorem.",
+      "img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShbCxm7L7dW-uNB4EyMFzJebKDVuDgHk4rDEr3OK_8bNR095bM",
+      "name" : "Dog"
+    },
+    "elephant" : {
+      "descr" : "Horses are good for riding! Proin diam dolor, efficitur sed elementum eu, efficitur quis nisl. Morbi eget sem ligula. Etiam hendrerit purus ut nibh aliquam malesuada vitae in nisi. Cras non nunc ex. Aenean pretium, ligula vitae dignissim accumsan, neque tellus mattis lorem, accumsan consequat nibh turpis at purus. Morbi facilisis ultrices gravida. Integer id augue id nunc consectetur hendrerit lobortis eget risus. Nullam pharetra aliquam massa, non venenatis ex condimentum vitae. Ut semper nisi ac turpis lacinia, eu consectetur sapien porttitor. Sed nec facilisis justo, sit amet pulvinar lorem.",
+      "img" : "https://c402277.ssl.cf1.rackcdn.com/photos/882/images/hero_small/African_Elephant_7.27.2012_hero_and_circle_HI_53941.jpg",
+      "name" : "Elephant"
+    },
+    "giraffe" : {
+      "descr" : "Dogs are man's best friend. Proin diam dolor, efficitur sed elementum eu, efficitur quis nisl. Morbi eget sem ligula. Etiam hendrerit purus ut nibh aliquam malesuada vitae in nisi. Cras non nunc ex. Aenean pretium, ligula vitae dignissim accumsan, neque tellus mattis lorem, accumsan consequat nibh turpis at purus. Morbi facilisis ultrices gravida. Integer id augue id nunc consectetur hendrerit lobortis eget risus. Nullam pharetra aliquam massa, non venenatis ex condimentum vitae. Ut semper nisi ac turpis lacinia, eu consectetur sapien porttitor. Sed nec facilisis justo, sit amet pulvinar lorem.",
+      "img" : "https://www.coolkidfacts.com/wp-content/uploads/2015/03/giraffes-for-kids.jpg",
+      "name" : "Giraffe"
+    },
+    "honeybadger" : {
+      "descr" : "Horses are good for riding! Proin diam dolor, efficitur sed elementum eu, efficitur quis nisl. Morbi eget sem ligula. Etiam hendrerit purus ut nibh aliquam malesuada vitae in nisi. Cras non nunc ex. Aenean pretium, ligula vitae dignissim accumsan, neque tellus mattis lorem, accumsan consequat nibh turpis at purus. Morbi facilisis ultrices gravida. Integer id augue id nunc consectetur hendrerit lobortis eget risus. Nullam pharetra aliquam massa, non venenatis ex condimentum vitae. Ut semper nisi ac turpis lacinia, eu consectetur sapien porttitor. Sed nec facilisis justo, sit amet pulvinar lorem.",
+      "img" : "https://media.mnn.com/assets/images/2014/07/honeybadger.jpg.638x0_q80_crop-smart.jpg",
+      "name" : "Honey Badger"
+    },
+    "horse" : {
+      "descr" : "Horses are good for riding! Proin diam dolor, efficitur sed elementum eu, efficitur quis nisl. Morbi eget sem ligula. Etiam hendrerit purus ut nibh aliquam malesuada vitae in nisi. Cras non nunc ex. Aenean pretium, ligula vitae dignissim accumsan, neque tellus mattis lorem, accumsan consequat nibh turpis at purus. Morbi facilisis ultrices gravida. Integer id augue id nunc consectetur hendrerit lobortis eget risus. Nullam pharetra aliquam massa, non venenatis ex condimentum vitae. Ut semper nisi ac turpis lacinia, eu consectetur sapien porttitor. Sed nec facilisis justo, sit amet pulvinar lorem.",
+      "img" : "https://lph5i1b6c053kq7us26bdk75-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/horse-facts.jpg",
+      "name" : "Horse"
+    },
+    "lion" : {
+      "descr" : "Lion is the King of the Jungle! Proin diam dolor, efficitur sed elementum eu, efficitur quis nisl. Morbi eget sem ligula. Etiam hendrerit purus ut nibh aliquam malesuada vitae in nisi. Cras non nunc ex. Aenean pretium, ligula vitae dignissim accumsan, neque tellus mattis lorem, accumsan consequat nibh turpis at purus. Morbi facilisis ultrices gravida. Integer id augue id nunc consectetur hendrerit lobortis eget risus. Nullam pharetra aliquam massa, non venenatis ex condimentum vitae. Ut semper nisi ac turpis lacinia, eu consectetur sapien porttitor. Sed nec facilisis justo, sit amet pulvinar lorem.",
+      "img" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Cecil_the_lion_at_Hwange_National_Park_%284516560206%29.jpg/1200px-Cecil_the_lion_at_Hwange_National_Park_%284516560206%29.jpg",
+      "name" : "Lion"
+    },
+    "pony" : {
+      "descr" : "Pony is a small horse! Proin diam dolor, efficitur sed elementum eu, efficitur quis nisl. Morbi eget sem ligula. Etiam hendrerit purus ut nibh aliquam malesuada vitae in nisi. Cras non nunc ex. Aenean pretium, ligula vitae dignissim accumsan, neque tellus mattis lorem, accumsan consequat nibh turpis at purus. Morbi facilisis ultrices gravida. Integer id augue id nunc consectetur hendrerit lobortis eget risus. Nullam pharetra aliquam massa, non venenatis ex condimentum vitae. Ut semper nisi ac turpis lacinia, eu consectetur sapien porttitor. Sed nec facilisis justo, sit amet pulvinar lorem.",
+      "img" : "https://www.pets4homes.co.uk/images/articles/949/large/showing-your-native-pony-51e7343a46551.jpg",
+      "name" : "Pony"
+    },
+    "zebra" : {
+      "descr" : "Zebras are striped. Proin diam dolor, efficitur sed elementum eu, efficitur quis nisl. Morbi eget sem ligula. Etiam hendrerit purus ut nibh aliquam malesuada vitae in nisi. Cras non nunc ex. Aenean pretium, ligula vitae dignissim accumsan, neque tellus mattis lorem, accumsan consequat nibh turpis at purus. Morbi facilisis ultrices gravida. Integer id augue id nunc consectetur hendrerit lobortis eget risus. Nullam pharetra aliquam massa, non venenatis ex condimentum vitae. Ut semper nisi ac turpis lacinia, eu consectetur sapien porttitor. Sed nec facilisis justo, sit amet pulvinar lorem.",
+      "img" : "https://fthmb.tqn.com/gqV-rhBYh8Ti3HGi0kwapq1HrzY=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/188063011-56a27c4d3df78cf7727695e7.jpg",
+      "name" : "Zebra"
+    }
+  }
+}
