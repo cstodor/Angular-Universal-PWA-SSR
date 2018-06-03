@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "build:ssr": "ng build --prod && ng run Angular-Universal-SSR:server && npm run webpack:server",
     "serve:ssr": "node dist/Angular-Universal-SSR/server.js",
-    "webpack:server": "webpack --config webpack.server.config.js"
+    "webpack:server": "webpack --config webpack.server.config.js",
+    "build-serve:ssr": "npm run build:ssr && npm run serve:ssr"
   },
   "private": true,
   "dependencies": {
