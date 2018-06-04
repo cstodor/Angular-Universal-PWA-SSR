@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { ServiceWorkerModule } from '@angular/service-worker';
 // Material Design
 import { MatButtonModule, MatCardModule, MatCardTitle, MatCardContent, MatCardImage, MatToolbarModule } from '@angular/material';
+// Flex Layout
+import { FlexLayoutModule } from '@angular/flex-layout';
 // AngularFire2 Modules
 import { AngularFireModule, FirebaseOptionsToken, FirebaseAppConfigToken } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -47,12 +49,13 @@ import { HomeComponent } from './home/home.component';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserTransferStateModule, // For State Transfer
     BrowserAnimationsModule,
+    MatButtonModule, MatCardModule, MatToolbarModule,
+    FlexLayoutModule,
     AngularFireModule,
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
-    MatButtonModule, MatCardModule, MatToolbarModule,
     AppRoutingModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
   ],
