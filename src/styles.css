@@ -1,10 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Material Theme */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 html, body {
     margin: 0;
     padding: 0
 }
 
-header,
 footer {
     background: #eee;
     padding: 1rem 2rem;
@@ -19,6 +22,14 @@ footer {
     margin-right: 2rem;
 }
 
+#primary-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+#primary-menu ul li a.active {
+    color: #a9ff00;
+}
+
 #wrapper {
     padding: 1rem 2rem;
     overflow: auto;
@@ -28,14 +39,27 @@ footer {
     background: #fafafa;
     border: 1px solid #eee;
     padding-right: 1rem;
+    padding-bottom: 0 !important;
     margin-bottom: 2rem;
     clear: both;
     overflow: auto;
 }
-.thumb {
-    float: left;
-    margin-right: 1rem;
+mat-card-title {
+    cursor: pointer;
+    outline: none;
 }
-.thumb img {
+.thumb,
+.single-thumb {
+    float: left;
+}
+.thumb img,
+.single-thumb img {
     max-width: 300px;
+    margin-bottom: 0;
+    margin-right: 1rem;
+    cursor: pointer;
+    outline: 0;
+}
+.single-thumb img {
+    max-width: 500px;
 }

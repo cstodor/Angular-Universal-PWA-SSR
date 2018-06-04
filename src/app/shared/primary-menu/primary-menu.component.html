@@ -1,13 +1,14 @@
 <nav id="primary-menu">
   <ul>
     <li>
-      <a routerLink="/">Home</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">Home</a>
     </li>
     <li>
-      <a routerLink="/fruits">Fruits (Firestore)</a>
+      <a routerLink="/fruits" routerLinkActive="active">Fruits (Firestore)</a>
     </li>
     <li>
-      <a routerLink="/animals">Animals (RTDB)</a>
+      <a routerLink="/animals" routerLinkActive="active">Animals (RTDB)</a>
     </li>
   </ul>
 </nav>

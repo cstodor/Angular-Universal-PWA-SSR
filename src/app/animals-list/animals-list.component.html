@@ -2,10 +2,14 @@
 
 <p>Animals loaded from Real Time Database:</p>
 
-<section *ngFor="let animal of animals$ | async" class="article">
+<mat-card *ngFor="let animal of animals$ | async" class="article">
   <div class="thumb" [routerLink]="'/animal/' + animal.name">
-    <img [src]="animal.img" [alt]="animal.name">
+    <img mat-card-image [src]="animal.img" [alt]="animal.name">
   </div>
-  <h2 [routerLink]="'/animal/' + animal.name">{{ animal.name }}</h2>
-  <p>{{ animal.descr | slice:0:50 }}...</p>
-</section>
+  <mat-card-content>
+    <mat-card-title>
+      <h2 [routerLink]="'/animal/' + animal.name">{{ animal.name }}</h2>
+    </mat-card-title>
+    <p>{{ animal.descr | slice:0:100 }}...</p>
+  </mat-card-content>
+</mat-card>
