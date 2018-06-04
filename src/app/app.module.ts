@@ -1,14 +1,21 @@
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ServiceWorkerModule } from '@angular/service-worker';
 // AngularFire2 Modules
 import { AngularFireModule, FirebaseOptionsToken, FirebaseAppConfigToken } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+// Environment
 import { environment } from '../environments/environment';
-
+// Routing
 import { AppRoutingModule } from './app-routing.module';
+// Services
+import { CheckForUpdateService } from './check-for-update.service';
+import { LogUpdateService } from './log-update.service';
+import { PromptUpdateService } from './prompt-update.service';
+// Components
 import { AppComponent } from './app.component';
 import { FruitDetailsComponent } from './fruit-details/fruit-details.component';
 import { FruitsListComponent } from './fruits-list/fruits-list.component';
@@ -18,6 +25,7 @@ import { PrimaryMenuComponent } from './shared/primary-menu/primary-menu.compone
 import { AnimalsListComponent } from './animals-list/animals-list.component';
 import { AnimalDetailsComponent } from './animal-details/animal-details.component';
 import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -40,6 +48,7 @@ import { HomeComponent } from './home/home.component';
     AngularFireStorageModule,
     AngularFireDatabaseModule,
     AppRoutingModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [
     { provide: FirebaseOptionsToken, useValue: environment.firebase },
