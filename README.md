@@ -1,6 +1,21 @@
-# AngularUniversalSSR
+# Angular Universal PWA with SSR 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.5.
+# Quick Start
+<p>The quickest way to get started is to clone the project and utilize it like this:</p>
+
+<p>1. Install dependencies from root folder using your command line:</p>
+<pre><code>npm install</code></pre>
+
+<p>2. Add Your Firebase Credentials</p>
+<p>open the <code>environment.ts</code> and <code>environment.prod.ts</code> files located at <code>environments/</code> folder, and add your Firebase Credentials.</p>
+
+<p>3. Upload the <code>animals.json</code> found in the <code>db</code> folder, to your Firebase Real Time Database to see the animals list, after launching the application</p>
+
+<p>4. After installation is finished use:</p>
+<pre><code>npm run build-serve:ssr</code></pre>
+
+<p>5. Then open your browser and go to:</p>
+<pre><code>http://localhost:4000</code></pre>
 
 ## Development server
 
@@ -25,3 +40,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# License
+<p>(The MIT License)</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
