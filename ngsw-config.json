@@ -20,6 +20,10 @@
       "resources": {
         "files": [
           "/assets/**"
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/css?family=Roboto",
+          "https://fonts.googleapis.com/icon?family=Material+Icons"
         ]
       }
     }
