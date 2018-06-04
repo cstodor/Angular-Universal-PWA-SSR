@@ -1,10 +1,12 @@
-<div *ngIf="animal$ | async as animal">
+<div *ngIf="animal$ | async as animal" fxLayout="row">
 
-  <div class="single-thumb">
+  <!-- Thumbnail Image -->
+  <div class="single-thumb" fxFlex="40">
     <img [src]="animal.img" [alt]="animal.name">
   </div>
 
-  <div class="content">
+  <!-- Content -->
+  <div class="content" fxFlex>
     <h1>{{ animal.name }}</h1>
     <p>{{ animal.descr }}</p>
   </div>

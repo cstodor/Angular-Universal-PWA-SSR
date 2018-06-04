@@ -1,9 +1,11 @@
-<div *ngIf="fruit$ | async as fruit">
+<div *ngIf="fruit$ | async as fruit" fxLayout="row">
 
-  <div class="single-thumb">
+  <!-- Thumbnail Image -->
+  <div class="single-thumb" fxFlex="40">
     <img [src]="fruit.img" [alt]="fruit.name">
   </div>
 
+  <!-- Content -->
   <div class="content">
     <h1>{{ fruit.name }}</h1>
     <p>{{ fruit.descr }}</p>

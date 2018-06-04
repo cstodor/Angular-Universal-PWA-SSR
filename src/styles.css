@@ -3,17 +3,20 @@
 /* Material Theme */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+/* Margins Paddings Reset */
 html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-footer {
-    background: #eee;
-    padding: 1rem 2rem;
+/* Wrapper */
+#wrapper {
+    padding: 2rem;
+    overflow: auto;
 }
 
+/* Menu */
 #primary-menu ul {
     padding: 0;
 }
@@ -27,40 +30,60 @@ footer {
     color: #fff;
     text-decoration: none;
 }
+
 #primary-menu ul li a.active {
     color: #a9ff00;
 }
 
-#wrapper {
-    padding: 1rem 2rem;
-    overflow: auto;
+
+/* Content */
+#page-title {
+    margin: 1rem 0;
 }
 
 .article {
-    background: #fafafa;
-    border: 1px solid #eee;
-    padding-right: 1rem;
-    padding-bottom: 0 !important;
+    background: #eee;
+    padding: 0 !important;
     margin-bottom: 2rem;
-    clear: both;
-    overflow: auto;
 }
+
+/* Thumbnails */
+.thumb img,
+.single-thumb img {
+    width: 100%;
+    margin: 0 !important;
+    cursor: pointer;
+    outline: 0;
+    display: block;
+}
+
+.single-thumb img {
+    cursor: default;
+}
+
+/* Card Titles */
 mat-card-title {
     cursor: pointer;
     outline: none;
 }
-.thumb,
-.single-thumb {
-    float: left;
+
+mat-card-title h2 {
+    outline: none;
+    margin: 1rem 0;
 }
-.thumb img,
-.single-thumb img {
-    max-width: 300px;
-    margin-bottom: 0;
-    margin-right: 1rem;
-    cursor: pointer;
-    outline: 0;
+
+/* Card Content */
+mat-card-content,
+.content {
+    padding: 0rem 2rem 2rem;
 }
-.single-thumb img {
-    max-width: 500px;
+
+mat-card-content p {
+    line-height: 1.4rem;
+}
+
+/* Footer */
+footer {
+    background: #eee;
+    padding: 1rem 2rem;
 }

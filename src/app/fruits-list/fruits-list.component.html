@@ -1,15 +1,33 @@
-<h1>Fruits List</h1>
+<!-- Page Title -->
+<h1 id="page-title">Fruits List</h1>
 
+<!-- Page Description -->
 <p>Fruits loaded from Firestore:</p>
 
-<mat-card *ngFor="let fruit of fruits$ | async" class="article">
-  <div class="thumb" [routerLink]="'/fruit/' + fruit.name">
-    <img mat-card-image [src]="fruit.img" [alt]="fruit.name">
-  </div>
-  <mat-card-content>
-    <mat-card-title>
-      <h2 [routerLink]="'/fruit/' + fruit.name">{{ fruit.name }}</h2>
-    </mat-card-title>
-    <p>{{ fruit.descr | slice:0:120 }}...</p>
-  </mat-card-content>
-</mat-card>
+<!-- Card List Item -->
+<div *ngIf="fruits$ | async as fruits">
+  <mat-card *ngFor="let fruit of fruits$ | async" class="article" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+
+    <!-- Thumbnail Image -->
+    <div class="thumb" fxFlex="25">
+      <img mat-card-image [src]="fruit.img" [alt]="fruit.name" [routerLink]="'/fruit/' + fruit.slug">
+    </div>
+
+    <!-- Content -->
+    <mat-card-content>
+
+      <!-- Title -->
+      <mat-card-title>
+        <h2 [routerLink]="'/fruit/' + fruit.slug">{{ fruit.name }}</h2>
+      </mat-card-title>
+
+      <!-- Excerpt -->
+      <p>{{ fruit.descr | slice:0:120 }}...</p>
+
+      <!-- Read More Button -->
+      <button mat-raised-button color="accent" [routerLink]="'/fruit/' + fruit.slug">Read More &gt;</button>
+
+    </mat-card-content>
+
+  </mat-card>
+</div>

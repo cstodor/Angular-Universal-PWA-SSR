@@ -1,16 +1,33 @@
-<h1>Animals List</h1>
+<!-- Page Title -->
+<h1 id="page-title">Animals List</h1>
 
+<!-- Page Description -->
 <p>Animals loaded from Real Time Database:</p>
+
+<!-- Card List Item -->
 <div *ngIf="animals$ | async as animals">
-  <mat-card *ngFor="let animal of animals$ | async" class="article">
-    <div class="thumb" [routerLink]="'/animal/' + animal.slug">
-      <img mat-card-image [src]="animal.img" [alt]="animal.name">
+  <mat-card *ngFor="let animal of animals$ | async" class="article" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+
+    <!-- Thumbnail Image -->
+    <div class="thumb" fxFlex="25">
+      <img mat-card-image [src]="animal.img" [alt]="animal.name" [routerLink]="'/animal/' + animal.slug">
     </div>
-    <mat-card-content>
+
+    <!-- Content -->
+    <mat-card-content fxFlex>
+
+      <!-- Title -->
       <mat-card-title>
         <h2 [routerLink]="'/animal/' + animal.slug">{{ animal.name }}</h2>
       </mat-card-title>
+
+      <!-- Excerpt -->
       <p>{{ animal.descr | slice:0:120 }}...</p>
+
+      <!-- Read More Button -->
+      <button mat-raised-button color="accent" [routerLink]="'/animal/' + animal.slug">Read More &gt;</button>
+
     </mat-card-content>
+
   </mat-card>
 </div>
