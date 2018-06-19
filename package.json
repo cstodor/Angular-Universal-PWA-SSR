@@ -30,7 +30,7 @@
     "@angular/router": "^6.0.3",
     "@angular/service-worker": "^6.0.3",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
-    "angularfire2": "^5.0.0-rc.8.1-next",
+    "angularfire2": "^5.0.0-rc.9",
     "bufferutil": "^3.0.5",
     "core-js": "^2.5.7",
     "firebase": "^5.0.4",
