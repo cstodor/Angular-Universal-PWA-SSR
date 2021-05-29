@@ -58,7 +58,7 @@
     "typescript": "~2.7.2",
     "webpack": "^4.10.2",
     "webpack-cli": "^2.1.4",
-    "ws": "^5.2.0",
+    "ws": "^7.4.6",
     "xmlhttprequest": "^1.8.0"
   }
 }
